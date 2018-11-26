@@ -13,6 +13,8 @@ export default class App extends Componet {
       )
   }
   componentDidMount(){
-    fetch()
+    fetch('http://api.open-notify.org/astros.json')
+      .then(response => response.json())
+      .then((data) => this.setState({ people: data.people }))
   }
 }
