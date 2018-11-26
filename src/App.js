@@ -8,7 +8,7 @@ export default class App extends Componet {
   render(){
     return(
       <div>
-      this.state.people.map((ppl,index)=>(<div key=index>{ppl.name}</div>))
+      this.state.people.map((ppl,index)=>(<div key={index}>{ppl.name}</div>))
       </div>
       )
   }
