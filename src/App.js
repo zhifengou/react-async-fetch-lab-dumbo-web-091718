@@ -12,4 +12,7 @@ export default class App extends Componet {
       </div>
       )
   }
+  componentDidMount(){
+    fetch()
+  }
 }
